@@ -11,6 +11,7 @@ import { MapsComponent } from './components/maps/maps.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapEditComponent } from './components/maps/map-edit/map-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { APP_ROUTING } from './app.routes';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDoRwwx9tekKYcfgnlZAMNrSDPDekQSLl8'
-    })
+    }),
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
